@@ -1,0 +1,38 @@
+﻿<Window x:Class="AppEscola.Telas.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AppEscola.Telas"
+        mc:Ignorable="d"
+        Title="LoginWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Border Grid.Column="0" Background="#FF5B9E55"/>
+        <Border Grid.Column="1" Background="#FFBDE4BA"/>
+
+        <StackPanel Orientation="Vertical" Grid.Column="1" Margin="20" VerticalAlignment="Center">
+            <TextBlock Text="Login" FontSize="30" FontWeight="Bold" HorizontalAlignment="Center"/>
+
+            <Label Content="Usuário:" FontSize="24"/>
+            <TextBox FontSize="24" Padding="5"/>
+
+            <Label Content="Senha:" FontSize="24"/>
+            <TextBox FontSize="24" Padding="5"/>
+
+
+            <Grid Margin="0 10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Content="Entrar" Padding="8" Background="Gray" VerticalAlignment="Center"/>
+            </Grid>
+
+        </StackPanel>
+    </Grid>
+</Window>
