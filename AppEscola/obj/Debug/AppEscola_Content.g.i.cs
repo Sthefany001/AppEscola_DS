@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("recursos/imagens/gridappescola.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("recursos/imagens/logoutappescola.png")]
 
 

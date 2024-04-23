@@ -12,8 +12,8 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <Border Grid.Column="0" Background="#FF5B9E55"/>
-        <Border Grid.Column="1" Background="#FFBDE4BA"/>
+        <Border Grid.Column="0" Background="#5086c1"/>
+        <Border Grid.Column="1" Background="#DFF4FF"/>
 
         <StackPanel Orientation="Vertical" Grid.Column="1" Margin="20" VerticalAlignment="Center">
             <TextBlock Text="Login" FontSize="30" FontWeight="Bold" HorizontalAlignment="Center"/>
@@ -28,9 +28,11 @@
             <Grid Margin="0 10">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                    
-                <Button Content="Entrar" Padding="8" Background="Gray" VerticalAlignment="Center"/>
+
+                <Button Grid.Column="0" Content="Entrar" Padding="8" Background="#6a9eda" VerticalAlignment="Center" Margin="5"/>
+                <Button Grid.Column="1" Content="Sair" Padding="8" Background="#6a9eda" VerticalAlignment="Center"  Margin="5"/>
             </Grid>
 
         </StackPanel>

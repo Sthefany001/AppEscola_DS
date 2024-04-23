@@ -12,46 +12,71 @@
             <ColumnDefinition Width="3*"/>
         </Grid.ColumnDefinitions>
 
-        <Border Grid.Column="0" Background="#FF5B9E55"/>
+        <Border Grid.Column="0" Background="#5086c1"/>
         <Border Grid.Column="1" Background="White"/>
 
         <StackPanel Orientation="Vertical" Grid.Column="0" Margin="20" VerticalAlignment="Center">
-            <Button FontSize="24" Background="#FF5B9E55" BorderBrush="Transparent" BorderThickness="0">
+            <Button FontSize="24" Background="#5086c1" BorderBrush="Transparent" BorderThickness="0">
                 <WrapPanel>
                     <Image Source="/Recursos/Imagens/homeAppEscola.png" Width="20" Margin="5"/>
                     <TextBlock Text="ESCOLA"/>
                 </WrapPanel>
             </Button>
 
-            <Button FontSize="24" Background="#FF5B9E55" BorderBrush="Transparent" BorderThickness="0">
+            <Button FontSize="24" Background="#5086c1" BorderBrush="Transparent" BorderThickness="0">
                 <WrapPanel>
-
+                    <Image Source="/Recursos/Imagens/gridAppEscola.png" Width="20" Margin="5"/>
                     <TextBlock Text="CURSO"/>
                 </WrapPanel>
             </Button>
 
-            <Button FontSize="24" Background="#FF5B9E55" BorderBrush="Transparent" BorderThickness="0">
+            <Button FontSize="24" Background="#5086c1" BorderBrush="Transparent" BorderThickness="0">
                 <WrapPanel>
-
+                    <Image Source="/Recursos/Imagens/bookOpenAppEscola.png" Width="20" Margin="5"/>
                     <TextBlock Text="TURMA"/>
                 </WrapPanel>
             </Button>
 
-            <Button FontSize="24" Background="#FF5B9E55" BorderBrush="Transparent" BorderThickness="0">
+            <Button FontSize="24" Background="#5086c1" BorderBrush="Transparent" BorderThickness="0">
                 <WrapPanel>
-                
+                    <Image Source="/Recursos/Imagens/userAppEscola.png" Width="20"  Margin="5"/>
                     <TextBlock Text="ALUNO"/>
                 </WrapPanel>
             </Button>
 
-            <Button FontSize="24" Background="#FF5B9E55" BorderBrush="Transparent" BorderThickness="0">
+            <Button FontSize="24" Background="#5086c1" BorderBrush="Transparent" BorderThickness="0">
                 <WrapPanel>
-
+                    <Image Source="/Recursos/Imagens/filetextAppEscola.png" Width="20" Margin="5"/>
                     <TextBlock Text="MATRÍCULA"/>
                 </WrapPanel>
             </Button>
 
+            <Button FontSize="24" Background="#6a9eda" BorderBrush="Transparent" BorderThickness="0">
+                <WrapPanel>
+                    <Image Source="/Recursos/Imagens/logoutAppEscola.png" Width="20" Margin="5"/>
+                    <TextBlock Text="SAIR"/>
+                </WrapPanel>
+            </Button>
         </StackPanel>
-        
+
+        <WrapPanel Orientation="Horizontal" Grid.Column="1" Margin="20" HorizontalAlignment="Right">
+            <Grid Margin="0 20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100*"/>
+                    <ColumnDefinition Width="100*"/>
+                    <ColumnDefinition Width="100*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Content="Cadastrar Escola" Padding="5" Margin="5" Background="#84b6fa"/>
+                <Button Grid.Column="1" Content="Cadastrar Curso" Padding="5" Margin="5" Background="#84b6fa"/>
+                <Button Grid.Column="2" Content="Cadastrar Turma" Padding="5" Margin="5" Background="#84b6fa"/>
+            </Grid>
+        </WrapPanel>
+
+        <StackPanel  Orientation="Horizontal" Grid.Column="1" Margin="15" HorizontalAlignment="Right">
+            <Calendar Height="200" Width="200" Margin="121,68,0,0" VerticalAlignment="Top"/>
+        </StackPanel>
+
+
     </Grid>
 </Window>

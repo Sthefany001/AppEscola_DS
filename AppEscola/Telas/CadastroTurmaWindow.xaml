@@ -1,0 +1,46 @@
+﻿<Window x:Class="AppEscola.Telas.CadastroTurmaWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AppEscola.Telas"
+        mc:Ignorable="d"
+        Title="CadastroTurmaWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="9*"/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0" Background="#5086c1"/>
+
+        <StackPanel  Orientation="Vertical" Grid.Row="0" Margin="10" VerticalAlignment="Center">
+            <Grid Margin="0 20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100*"/>
+                    <ColumnDefinition Width="100*"/>
+                    <ColumnDefinition Width="100*"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Column="0" Text="Cadastro de Turma" FontSize="18" FontWeight="Bold" Margin="20" HorizontalAlignment="Left"/>
+                <Button Grid.Column="2" Content="Sair" Padding="5" Margin="5" Background="#5086c1" BorderBrush="Transparent" BorderThickness="0"/>
+            </Grid>
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical" Grid.Row="1" Margin="10" VerticalAlignment="Top">
+            <Label Content="Sigla:" FontSize="15"/>
+            <TextBox FontSize="15" Padding="1"/>
+
+            <Label Content="Ano:" FontSize="15"/>
+            <TextBox FontSize="15" Padding="1"/>
+
+            <Label Content="Quantidade de vagas:" FontSize="15"/>
+            <TextBox FontSize="15" Padding="1"/>
+
+            <Label Content="Situação:" FontSize="15"/>
+            <CheckBox>Aberta</CheckBox>
+            <CheckBox>Fechada</CheckBox>
+        </StackPanel>
+
+    </Grid>
+</Window>
